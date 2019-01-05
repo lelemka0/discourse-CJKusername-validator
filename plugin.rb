@@ -3,9 +3,6 @@
 # version: 0.2
 # authors: lelemka0
 
-gem "chinese_pinyin", "1.0.1"
-gem "romaji", "0.2.4"
-
 after_initialize do
   UserNameSuggester.module_eval do
     def self.sanitize_username(name)
