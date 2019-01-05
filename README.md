@@ -1,0 +1,1 @@
+# discourse-CJKusername-validator
