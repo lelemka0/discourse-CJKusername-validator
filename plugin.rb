@@ -4,7 +4,7 @@
 # authors: lelemka0
 
 after_initialize do
-  UserNameSuggester.module_eval 
+  UserNameSuggester.module_eval do
     def self.sanitize_username(name)
       name = ActiveSupport::Inflector.transliterate(name.to_s)
       # 1. replace characters that aren't allowed with '_'
